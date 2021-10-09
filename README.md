@@ -11,6 +11,6 @@ running of the thing:
 After doing new app:
 
 
-python manage.py makemigrations booklist
-python manage.py migrate
+* python manage.py makemigrations booklist
+* python manage.py migrate
 
