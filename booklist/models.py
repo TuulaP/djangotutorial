@@ -23,7 +23,7 @@ class Book(models.Model):
 
     categories = models.ManyToManyField('Category', related_name='books')
 
-    locations = models.OneToOneField('Location', related_name='books',on_delete=models.CASCADE)
+    location= models.OneToOneField('Location', related_name='books',on_delete=models.CASCADE)
 
 
 class Comment(models.Model):

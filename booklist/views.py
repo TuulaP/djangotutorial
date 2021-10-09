@@ -38,18 +38,18 @@ def book_category(request, category):
     return render(request, "book_category.html", context)
 
 
-def book_location(request, category):
+def book_location(request, location):
 
     books = Book.objects.filter(
 
-        categories__name__contains=category
+        locations__name__contains=location
 
     ).order_by(
         '-created_on'
     )
 
     context = {
-        "locations": location,
+        "location": location,
         "books": books
 
     }

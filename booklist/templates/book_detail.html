@@ -22,6 +22,15 @@
 
         {% endfor %}
 
+        Location:
+
+        <a href="{% url 'book_location' book.location.name %}">
+
+            {{ book.location.name }}
+
+        </a>&nbsp;
+
+
     </small>
 
     <p>{{ book.body | linebreaks }}</p>

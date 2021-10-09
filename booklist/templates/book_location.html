@@ -8,25 +8,15 @@
 
     <hr>
 
-    {% for post in posts %}
+    {% for book in books %}
 
-        <h2><a href="{% url 'blog_detail' post.pk%}">{{ post.title }}</a></h2>
+        <h2><a href="{% url 'book_detail' post.pk%}">{{ book.title }}</a></h2>
 
         <small>
 
             {{ book.created_on.date }} |&nbsp;
 
-            Locations:&nbsp;
-
-            {% for location in book.locations.all %}
-
-            <a href="{% url 'blog_category' category.name %}">
-
-                {{ location.name }}
-
-            </a>&nbsp;
-
-            {% endfor %}
+            Stuff!
 
         </small>
 
