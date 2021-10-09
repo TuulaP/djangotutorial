@@ -8,3 +8,5 @@ running of the thing:
 * python3 manage.py runserver
 
 
+migrate
+
