@@ -8,11 +8,9 @@ running of the thing:
 * python3 manage.py runserver
 
 
-
 After doing new app:
 
 
 python manage.py makemigrations booklist
 python manage.py migrate
-
 
